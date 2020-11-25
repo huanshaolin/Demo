@@ -13,7 +13,7 @@ steps:
         {{#if build.pull }}
           *Build started*: {{ repo.owner }}/{{ repo.name }}cc - <https://github.com/{{ repo.owner }}/{{ repo.name }}/pull/{{ build.pull }}|Pull Request #{{ build.pull }}>
         {{else}}
-          *Build started: {{ repo.owner }}/{{ repo.name }} - Build #{{ build.number }}* (type: `{{ build.event }}`)
+          *Build started: {{ repo.owner }}/{{ repo.name }} - Build #{{ build.number }}* (typje: `{{ build.event }}`)
         {{/if}}
         Commit: <https://github.com/{{ repo.owner }}/{{ repo.name }}/commit/{{ build.commit }}|{{ truncate build.commit 8 }}>
         Branch: <https://github.com/{{ repo.owner }}/{{ repo.name }}/commits/{{ build.branch }}|{{ build.branch }}>
